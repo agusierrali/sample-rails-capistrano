@@ -2,7 +2,7 @@
 lock "~> 3.16.0"
 
 set :application, "sample_app"
-set :repo_url, "git@github.com:agusierrali/sample_rails_app.git"
+set :repo_url, "git@github.com:agusierrali/sample-rails-capistrano.git"
 set :branch, 'master'
 
 # Default branch is :master
