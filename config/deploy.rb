@@ -2,6 +2,7 @@
 lock "~> 3.16.0"
 
 set :application, "sample_app"
+set :deploy_to, "/root/sample_rails_app"
 set :repo_url, "git@github.com:agusierrali/sample_rails_app.git"
 set :branch, 'master'
 
@@ -37,4 +38,4 @@ set :branch, 'master'
 # set :keep_releases, 5
 
 # Uncomment the following to require manually verifying the host key before first deploy.
-# set :ssh_options, verify_host_key: :secure
+#set :ssh_options, verify_host_key: :secure
