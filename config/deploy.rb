@@ -3,7 +3,7 @@ lock "~> 3.16.0"
 
 set :application, "sample_app"
 set :repo_url, "git@github.com:agusierrali/sample-rails-capistrano.git"
-set :branch, 'master'
+set :branch, 'main'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -37,4 +37,7 @@ set :log_level, :debug
 # set :keep_releases, 5
 
 # Uncomment the following to require manually verifying the host key before first deploy.
-set :ssh_options, verify_host_key: :secure
+set :ssh_options, verify_host_key: :always
+
+
+
