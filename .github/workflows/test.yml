@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Try to fail 
+      run: exit 1
     - if: always()
       uses: ouzi-dev/commit-status-updater@v1.1.0
       with:
